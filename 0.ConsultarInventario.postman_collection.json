@@ -1,0 +1,28 @@
+{
+	"info": {
+		"_postman_id": "e56db0ec-2b92-4a10-8f1b-b70b9aeaea29",
+		"name": "0.ConsultarInventario",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "0.GET Consulto Inventario",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/store/inventory",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"store",
+						"inventory"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

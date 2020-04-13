@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "aeacc923-580a-4b3d-8fdd-2f53d643f483",
+		"name": "3.BorrarID",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "3.1. DELETE 10ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ae1fb2d1-d3c6-4a4d-a7b1-0a5610479c70",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/store/order/{{id}}",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"store",
+						"order",
+						"{{id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3. DELETE 1Unitaria",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ae1fb2d1-d3c6-4a4d-a7b1-0a5610479c70",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/store/order/5",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"store",
+						"order",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "bf5800a9-e523-436f-aced-3a251257a239",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "5f263d6b-2135-4893-aa4b-083ce249c643",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

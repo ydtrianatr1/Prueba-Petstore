@@ -1,0 +1,298 @@
+{
+	"info": {
+		"_postman_id": "ab3250a8-e4e0-49c3-a866-e7f6a1731ed3",
+		"name": "5.CrearID  Fallido",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1. POST 1 Unitario  Error petId",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 1,\r\n  \"petId\": 10,\r\n  \"quantity\": M,\r\n  \"shipDate\": \"2020-04-10T04:15:19.743Z\",\r\n  \"status\": \"placed\",\r\n  \"complete\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/store/order",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"store",
+						"order"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "1. POST 1 Unitario  Error quantity ",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 1,\r\n  \"petId\": 5,\r\n  \"quantity\": Muchos,\r\n  \"shipDate\": \"2020-04-10T04:15:19.743Z\",\r\n  \"status\": \"placed\",\r\n  \"complete\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/store/order",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"store",
+						"order"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "1. POST 1 Unitario  Error id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": uno,\r\n  \"petId\": 5,\r\n  \"quantity\": 1,\r\n  \"shipDate\": \"2020-04-10T04:15:19.743Z\",\r\n  \"status\": \"placed\",\r\n  \"complete\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/store/order",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"store",
+						"order"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "1. POST 1 Unitario  Error Date",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 9,\r\n  \"petId\": 5,\r\n  \"quantity\": 1,\r\n  \"shipDate\": \"20-04-10T04:15:19.743Z\",\r\n  \"status\": \"placed\",\r\n  \"complete\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/store/order",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"store",
+						"order"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "1. POST 1 Unitario  Error Date No vigente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 9,\r\n  \"petId\": 5,\r\n  \"quantity\": 1,\r\n  \"shipDate\": \"2017-04-10T04:15:19.743Z\",\r\n  \"status\": \"placed\",\r\n  \"complete\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/store/order",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"store",
+						"order"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "1. POST 1 Unitario  Error id Existente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\":1,\r\n  \"petId\": 5,\r\n  \"quantity\": 1,\r\n  \"shipDate\": \"2020-04-10T04:15:19.743Z\",\r\n  \"status\": \"placed\",\r\n  \"complete\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/store/order",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"store",
+						"order"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "6. GET 1 Unitaria ID no creado.",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e2b3943c-f8db-40a1-b7ea-d733b0ab631f",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/store/order/50",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"store",
+						"order",
+						"50"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3. DELETE Id No creado",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ae1fb2d1-d3c6-4a4d-a7b1-0a5610479c70",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/store/order/50",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"store",
+						"order",
+						"50"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "b18e388f-0615-49e3-999d-bb5a39c5fe5a",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "db56e92f-5daf-445c-b94d-3b8665505c40",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
